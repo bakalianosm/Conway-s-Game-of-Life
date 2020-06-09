@@ -5,11 +5,13 @@
 ### In the course of data structures we called to implement Conway's Game of Life 
 #### The professor gave us a completed data-structure library with many ADTs and i chose ADTSet that is implemented with AVL Tree to complete the project
 
-** Notice : Code comments are in Greek Language . **
-** Soon I will update README and the whole repo with english comments and README**
+Notice : Code comments are in Greek Language . **
+Soon I will update README and the whole repo with english comments and README
 
+* [Greek Version](#Greek-Version)
+* [English Version](#English-Version)
 
-
+## Greek Version:
 
 #### Γενικές πληροφορίες για την Άσκηση:
 Αρχικά , στην υλοποίηση μου έχω ορίσει το **LifeState** να αναπαρίσταται από **ATDSet**  , με τη χρήση της εντολής `typedef Set LifeState` . Στο **Set** αυτό κρατάω τα κελιά , τα οποία είναι ζωντανά και μόνο αυτά. Οποιοδήποτε κελί **ΔΕΝ** βρίσκεται μέα στο **Set** , θεωρείται νεκρό.
@@ -45,3 +47,8 @@
 
 ##### Σετικά με την `life_destroy` :
 Σε αυτή τη συνάρτηση καλέιται ο "καταστροφέας" του ADT που επέλεξα( `set_destroy` ).Τίποτα παραπάνω.
+
+
+## English Version:
+
+... **Soon** ...
