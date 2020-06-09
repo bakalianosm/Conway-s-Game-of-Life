@@ -1,7 +1,8 @@
 # Conway-s-Game-of-Life
 
 
-### A small implementation of Game of Life implementation in C . 
+### A small implementation of [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) implementation in C . 
+
 ### In the course of data structures we called to implement Conway's Game of Life 
 #### The professor gave us a completed data-structure library with many ADTs and i chose ADTSet that is implemented with AVL Tree to complete the project
 
