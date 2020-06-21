@@ -6,14 +6,7 @@
 #include "life.h"
 
 
-//αυτή η συνάρτηση,είναι η πρώτη compare  που έφτιαξα , και την αφηνω εδώ.
-// int compare(Pointer a, Pointer b){ //εδώ έχω φτιάξει μία συνάρτηση που συγκρίνει τα κύτταρα.
-//     if((((LifeCell*)a)->x == ((LifeCell*)b)->x) && (((LifeCell*)a)->y == ((LifeCell*)b)->y))
-//         return 0;                           //αν είναι ίσα επέστρεψε 0
-//     else if(((LifeCell*)a)->y < ((LifeCell*)b)->y || //διαφορετικά,έχω κάνει μια σύμβαση για την σύγκριση των κελιών.
-//        (((LifeCell*)a)->y > ((LifeCell*)b)->y && ((LifeCell*)a)->x < ((LifeCell*)b)->x)) return 1;
-//     else return -1;
-// }
+
 
 int compare(Pointer a, Pointer b){ //εδώ έχω φτιάξει μία συνάρτηση που συγκρίνει τα κύτταρα.
     if((((LifeCell*)a)->x == ((LifeCell*)b)->x) && (((LifeCell*)a)->y == ((LifeCell*)b)->y))
@@ -343,21 +336,6 @@ LifeState life_evolve(LifeState state){
   printf("\033[1;33mThe size of the evolved state is %d\n\033[0m",set_size(new_state));
   free(tempCell);
   return new_state; //και την επιστρέφω.
-}
-
-//ΔΕΝ ΞΕΡΩ ΚΑΤΑ ΠΟΣΟ ΧΡΕΙΑΖΕΤΑΙ ΕΔΩ.
-int isAlive(LifeState ls, int x , int y){
-  LifeCell* cell=malloc(sizeof(LifeCell));
-  cell->x=x;
-  cell->y=y;
-  if(set_find(ls,cell)!=NULL) {
-    free(cell);
-    return 1;
-  }
-  else{
-    free(cell);
-    return 0;
-  }
 }
 
 void life_destroy(LifeState temp){
